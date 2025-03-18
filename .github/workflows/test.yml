@@ -22,7 +22,6 @@ jobs:
         with:
           auto-update-conda: true
           python-version: ${{ matrix.python-version }}
-      - name: Create and describe model
-        run: python ergom.py
-      - name: Translate
-        run: python translate.py ergom.py ergom.F90
+      - run: conda install numpy
+      - run: python ergom.py
+      - run: python translate.py ergom.py ergom.F90
