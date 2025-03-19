@@ -17,7 +17,6 @@ secs_pr_day = 86400
 class ERGOM(Model):
     # fmt: off
     sfl_po = FloatParameter("surface phosphate flux", "mmol P/m2/d", default=0.0015, scale_factor=1.0/secs_pr_day)
-
     sfl_ni = FloatParameter("surface nitrate flux", "mmol N/m2/d", default=0.09, scale_factor=1.0/secs_pr_day)
     sfl_am = FloatParameter("surface ammonium flux", "mmol N/m2/d", default=0.07, scale_factor=1.0/secs_pr_day)
     fluff = BoolParameter("use fluff", default=False)
